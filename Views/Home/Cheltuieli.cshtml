@@ -1,0 +1,16 @@
+@using NetChelt.Models
+@model NetChelt.Models.UserModel
+
+@{
+    ViewData["Title"] = "Cheltuieli";
+}
+
+<h1>@ViewData["Title"]</h1>
+<p>v-ați logat cu succes cu: <br />id=<strong>@UserModel.Id</strong> cu <br />username=<strong>@UserModel.UserName</strong> și <br />parola=@UserModel.Password</p>
+
+
+<div class="text-center">
+    @{ var message="Hello, is cheltuieli page";}
+    Message is: <b>@message</b>
+    
+</div>
