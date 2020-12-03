@@ -14,6 +14,7 @@ namespace NetChelt
     public class Program
     {
         public static SQLiteConnection Conexiune;
+        public static SQLiteTransaction Tranzactie;
         public static SQLiteCommand Comanda;
         public static SQLiteDataReader CititorDate;
 
