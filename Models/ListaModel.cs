@@ -4,6 +4,7 @@ namespace NetChelt.Models
     {
         public string Id { get; set; }
         public int Prioritate { get; set; }
+        public string Denumire { get; set; }
         public string Magazin { get; set; }
         public string Scurt { get; set; }
         public string Descriere { get; set; }

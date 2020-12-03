@@ -1,5 +1,5 @@
 @using NetChelt.Models
-@model NetChelt.Models.UserModel
+@model NetChelt.Models.ListaContext
 
 @{
     ViewData["Title"] = "Cheltuieli";
@@ -8,10 +8,9 @@
 <h1>@ViewData["Title"]</h1>
 <p>v-ați logat cu succes cu: <br />id=<strong>@UserModel.Id</strong> cu <br />username=<strong>@UserModel.UserName</strong> și <br />parola=@UserModel.Password</p>
 
-
-<div class="text-center">
-    @{ var message="Hello, is cheltuieli page";}
-    Message is: <b>@message</b>
-</div>
-
-<select name="dropdown" id="dropdown" onchange="this.form.submit()">
+<table>
+@foreach (var x in ListaContext.ListaToDo)
+    {
+        <tr><td>@x.Id</td><td>@x.Denumire</td><td>@x.Prioritate</td><td>@x.Valoare</td><td>@x.Date</td><td>@x.Perioada<td></td></tr>
+    }
+</table>

@@ -16,6 +16,7 @@ namespace Namespace
         {
            if(UserModel.verificausernameparola(UserName,Password)==true){
                //return Content($"Hello {UserName}");
+               ListaContext.incarcLista();
                return RedirectToAction("Cheltuieli");
            }else{
                return View();
